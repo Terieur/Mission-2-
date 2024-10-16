@@ -14,11 +14,14 @@ import javax.swing.JComboBox;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JTable;
+import javax.swing.border.EtchedBorder;
 
 public class AffecterCommande extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -96,6 +99,12 @@ public class AffecterCommande extends JFrame {
 		btnNewButton.setFont(new Font("Arial", Font.PLAIN, 11));
 		btnNewButton.setBounds(343, 182, 89, 23);
 		contentPane.add(btnNewButton);
+		
+		table = new JTable();
+		table.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
+		table.setFont(new Font("Arial", Font.PLAIN, 11));
+		table.setBounds(32, 117, 278, 103);
+		contentPane.add(table);
 		
 		
 	}
